@@ -1,2 +1,249 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Variables */
+/* $mine-shaft: #3F3F3F;
+$charcoal: #232323;
+$cod-gray: #141414;
+$sunshade: #ffa624;
+$dove-gray: #6e6e6e;
+$bright-red: #b50010;
+$white: #ffffff;
+$alto: #dcdcdc;
+$comment-history: #f7f4f4;
+$comment-text: #5e5c5c;
+
+$text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+$filter-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+$break-small: 800px; */
+
+/* General */
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #app {
+      background-color: #3F3F3F;
+      max-width: 1100px;
+      margin: 0 auto;
+  
+      font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+/* Authentication */
+.sign-up-link {
+    float: right;
+    margin-right:20px;
+}
+
+.auth-link {
+    margin-left: 5px;
+}
+
+.auth-form {
+    padding-bottom: 30px;
+}
+
+/* Bug details */
+
+.form-buttons {
+    padding: 10px;
+}
+
+.form-button {
+    margin-right: 5px;
+}
+
+.form-block {
+    display: flex
+}
+
+.input-area {
+    flex-basis: 80%;
+    padding: 10px;
+}
+
+#comments-area {
+    flex-basis:80%;
+    padding: 10px;
+}
+
+#selections-area {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.form-group-row {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 98%;
+    border-radius: 4px;
+    padding: 5px;
+    margin:5px 20px 5px 5px;
+}
+
+.target-date {
+    border-radius: 4px;
+}
+
+.comment-history {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    min-height: 150px;
+    color: #5e5c5c;
+    /* background-color: $comment-history; */
+}
+
+.button-comment {
+    margin: 0px 5px 10px 5px;
+}
+
+/* Filters */
+#error-filter {
+    flex-basis: 25%;
+}
+  
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .check-filter {
+    color: $alto;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    text-shadow: $text-shadow;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .checkbox {
+    border-color: $white;
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    user-select: none;
+    box-shadow: $filter-shadow;
+} */
+
+.check-filter-title {
+    user-select: none;
+    vertical-align: top;
+    margin-left: 4px;
+    line-height: 1.6rem;
+    padding-left: 0.45rem;
+}
+
+#search-by-title {
+    margin-top: 20px;
+}
+
+.react-datepicker__close-icon {
+    display: inline;
+}
+
+/* Bug list */
+
+#overview {
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+#error-list {
+    flex-basis: 75%;
+}
+
+#new-button {
+    margin: 0rem 0rem 2px 2px;
+}
+
+
+  /* List item */
+  .list-item-title {
+    color: white;
+    background-color: #0275D8;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.list-item {
+    display: flex;
+    color: black;
+	padding: 2px;
+	margin: 2px 50px 2px 2px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color:white;
+}
+
+.list-item-desc {
+    padding-left: 5px;
+}
+
+.list-item-left {
+    flex-basis: 75%;
+}
+
+.list-item-right {
+    margin-left: 5px;
+    flex-basis: 25%;
+}
+
+/* Navbar */
+#title {
+    padding: 2rem 0 1rem 2rem;
+    display: flex;
+    align-items: center;
+    }
+    
+    #logo {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+    }
+    
+    h1 {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    user-select: none;
+    }
+    
+    .header {
+        display: flex;
+    }
+    
+    .header-left {
+        flex-basis: 50%;
+    }
+    
+    .header-rigth {
+        padding-top: 2rem;
+        flex-basis: 50%;
+        margin-right: 10px;
+        text-align: right; 
+        font-size: 1.5rem;
+    }
+    
+    #logout-button {
+        margin-left: 8px;
+        background-color:#383737;
+        border-color: #232323;
+    }
